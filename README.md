@@ -21,5 +21,5 @@ The program offers three simulation modes:
 Python version: 2.7  
 IDE: PyCharm Community Edition  
 Date of creation: May 2020  
-Type of project: Semester project
+Type of project: Semester project  
 Group members: Zain Amir Zaman, Khan Moeen Danish
