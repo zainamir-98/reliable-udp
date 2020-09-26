@@ -1,6 +1,6 @@
 # Reliable UDP using Python Socket Programming
 
-UDP on its own is unreliable because none of the datagrams sent back and forth between the server and client are acknowledged. This makes it difficult for the sender to ensure that the recipient received the packet or not. Therefore, by taking inspiration from TCP, we decided to improve the reliability of UDP in the following ways:
+UDP on its own is unreliable as none of the datagrams sent back and forth between the server and client are acknowledged. This makes it difficult for the sender to verify whether the recipient has received the packet or not. Therefore, by taking inspiration from TCP, we decided to improve the reliability of UDP in the following ways:
 * **Sequencing of packets**: The client sends the packet number along with the packet itself; this allows the server to recognise un-ordered or missing packets.
 * Stop-and-wait for window: After sending all the packets in a given window, the client waits for the server's acknowledgment before sending the remaining packets. The server, meanwhile, re-orders the packets (if necessary) and checks for missing packets.
 * **Retransmission of lost packets (selective-repeat)**: The server requests the client to re-transmit one or more missing packets.
